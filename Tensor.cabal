@@ -1,5 +1,5 @@
 name: Tensor
-version: 1.1.0.0
+version: 1.1.0.1
 synopsis: Tensor data types
 description:
   This package contains tensor data types and their instances for some basic
