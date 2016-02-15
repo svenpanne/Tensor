@@ -27,7 +27,9 @@ library
   exposed-modules: Data.Tensor
   build-depends: base >= 3 && < 5
   default-language: Haskell2010
-  other-extensions: DeriveDataTypeable
+  other-extensions:
+    CPP
+    DeriveDataTypeable
   hs-Source-Dirs: src
   ghc-options: -Wall
   if impl(ghc > 8)

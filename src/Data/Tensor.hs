@@ -1,4 +1,4 @@
-{-# LANGUAGE DeriveDataTypeable #-}
+{-# LANGUAGE CPP, DeriveDataTypeable #-}
 --------------------------------------------------------------------------------
 -- |
 -- Module      :  Data.Tensor
@@ -19,9 +19,12 @@ module Data.Tensor (
    Vector1(..), Vector2(..), Vector3(..), Vector4(..)
 ) where
 
+#if !MIN_VERSION_base(4,8,0)
 import Control.Applicative ( Applicative(..) )
+import Data.Foldable ( Foldable(..) )
+#endif
 import Control.Monad ( ap )
-import Data.Foldable ( Foldable(..), foldlM )
+import Data.Foldable ( foldlM )
 import Data.Ix ( Ix )
 import Data.Traversable ( Traversable(..), mapAccumL )
 import Data.Typeable ( Typeable )
