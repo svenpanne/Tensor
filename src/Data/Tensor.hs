@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------
 -- |
 -- Module      :  Data.Tensor
--- Copyright   :  (c) Sven Panne 2014
+-- Copyright   :  (c) Sven Panne 2014-2018
 -- License     :  BSD3
 -- 
 -- Maintainer  :  Sven Panne <svenpanne@gmail.com>
